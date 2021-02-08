@@ -119,20 +119,13 @@ Method `getTotalClients` of the class Bank is not working properly:
 
 
 
-##### `bank.js`
-
 ```js
-// THE FOLLOWING METHODS ARE NOT WORKING:
-/* 
-// KEEP COMMENTED!:
-console.log( bankBER.getTotalClients() );
 
-console.log( bankBCN.getTotalBalance() );
-*/
+bankBER.getTotalClients();  // ❌ ==> Uncaught ReferenceError: bankBranchAccount is not defined
 
-Uncaught ReferenceError: bankBranchAccount is not defined
 ```
 
+<br>
 
 
 It seems that issue is with the `forEach` loop causing the loss of `this` value in the callback function.
@@ -161,6 +154,7 @@ For the requirements that the new method `totalClients` must meet, check the tes
 
 ###  Iteration 2 - method `totalBalance`
 
+<br>
 
 
 Similar to the previous bug, method `getTotalBalance` of the class Bank has a bug and is not working as expected.
@@ -196,6 +190,8 @@ For the requirements that the new method `totalBalance` must meet, check the tes
 ### Iteration 3
 
 
+<br>
+
 
 Some of the functionality of our Account class is broken, the issue is considred a hot fix and needs immediate attention, therefore CTO wants you to fix these methods ASAP. 
 
@@ -204,13 +200,16 @@ Nested methods `incrementBalance`, `decrementBalance` and `printBalance` are not
 First you will have to uncomment the commented lines of code with the methods  `incrementBalance`, `decrementBalance` and `printBalance`  in the file `bank.js`.
 
 
+<br>
+
+
 
 ##### `bank.js`
 
 ```js
       // ITERATION 3 & 4:
 
-			// incrementBalance: (amount) => {
+      // incrementBalance: (amount) => {
       //   this.balance += amount;
       // },
 
@@ -222,6 +221,9 @@ First you will have to uncomment the commented lines of code with the methods  `
       //   return `${this.balance} ${this.currency}`;
       // },
 ```
+
+
+<br>
 
 
 
