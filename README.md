@@ -136,11 +136,11 @@ It seems that issue is with the `forEach` loop causing the loss of `this` value 
 
 To fix this functionality and get our banks back in business create a new method called  `totalClients`. 
 
-Method should do the same thing as `getTotalClients` but must work properly this time, so make sure to check the documentation [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach#using_thisarg) and investigate how to fix the loss of `this` in the `forEach` loop. 
+Method should do the same thing as `getTotalClients` but must work properly this time, so make sure to check the documentation [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach#using_thisarg) and [this example](https://www.educative.io/edpresso/how-to-execute-foreach-in-javascript) and investigate in order to understand how to fix the loss of `this` in the `forEach` loop. 
 
 
 
-After looking at the source code of the broken method `getTotalClients` our CTO suggested taking a look into using arrow function in the `forEach` loop when implementing the new method.
+After looking at the source code of the broken method `getTotalClients` our CTO suggested taking a look into using arrow function in the `forEach` loop, as one of the options to fix the loss of `this` when implementing the new method.
 
 
 
