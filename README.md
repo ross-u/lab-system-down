@@ -239,7 +239,7 @@ Uncomment the above lines and check the test specs for the additional informatio
 
 
 
-Now that all of our systems are operational, we should start working on the next thing in our bank's IT system.
+Now that all systems are operational, we should start working on the next feature in our banks IT system.
 
 In the current product iteration CTO wants you to implement the allowed minus check in the methods`incrementBalance` and `decrementBalance`. 
 
